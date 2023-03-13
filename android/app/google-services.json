@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1281027745",
+    "project_id": "betty-boom-ecomerce",
+    "storage_bucket": "betty-boom-ecomerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1281027745:android:fafd66c1085e854dc18ae0",
+        "android_client_info": {
+          "package_name": "com.example.flutter_bloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1281027745-n0ij8a8mdrur6ho4qccr287ipjdn3pmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADVwrZ1JpG1heLNisn2bsJvp0wypZcSTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1281027745-n0ij8a8mdrur6ho4qccr287ipjdn3pmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
