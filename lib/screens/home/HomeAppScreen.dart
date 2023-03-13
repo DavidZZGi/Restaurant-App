@@ -19,7 +19,9 @@ class HomeAppScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'BettyBoom'),
+      appBar: const CustomAppBar(
+        title: 'BettyBoom',
+      ),
       bottomNavigationBar: const BottomNavBar(),
       // ignore: avoid_unnecessary_containers
       body: Column(
