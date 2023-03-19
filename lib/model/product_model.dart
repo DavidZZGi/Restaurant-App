@@ -8,7 +8,7 @@ class Product extends Equatable {
   final bool isRecommended;
   final bool isPopular;
 
-  Product(
+  const Product(
       {required this.category,
       required this.imageUrl,
       required this.isPopular,
@@ -21,42 +21,42 @@ class Product extends Equatable {
       [name, imageUrl, price, isPopular, isRecommended, category];
 
   static List<Product> products = [
-    Product(
+    const Product(
         category: 'BurgerKing',
         imageUrl: 'assets/images/food4.jpg',
         isPopular: true,
         isRecommended: false,
         name: 'Mixed Burger',
         price: 3.99),
-    Product(
+    const Product(
         category: 'BurgerKing',
         imageUrl: 'assets/images/food5.jpg',
         isPopular: false,
         isRecommended: true,
         name: 'French fries with burguer',
         price: 2.99),
-    Product(
+    const Product(
         category: 'HotDogs',
         imageUrl: 'assets/images/food6.jpg',
         isPopular: true,
         isRecommended: false,
         name: 'Hotdog',
         price: 1.95),
-    Product(
+    const Product(
         category: 'Hamburger',
         imageUrl: 'assets/images/food7.jpg',
         isPopular: true,
         isRecommended: false,
         name: 'Coca Cola',
         price: 1.99),
-    Product(
+    const Product(
         category: 'CrazyBurger',
         imageUrl: 'assets/images/food8.jpg',
         isPopular: true,
         isRecommended: false,
         name: 'SuperBurger',
         price: 5.95),
-    Product(
+    const Product(
         category: 'CrazyBurger',
         imageUrl: 'assets/images/food8.jpg',
         isPopular: false,

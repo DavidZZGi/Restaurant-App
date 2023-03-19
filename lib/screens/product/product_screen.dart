@@ -1,8 +1,8 @@
-import 'package:Ecommerce/blocs/cart_bloc/bloc/cart_bloc.dart';
-import 'package:Ecommerce/blocs/wishlist_bloc/wishlist_bloc_bloc.dart';
+import 'package:restaurant_app/blocs/cart_bloc/bloc/cart_bloc.dart';
+import 'package:restaurant_app/blocs/wishlist_bloc/wishlist_bloc_bloc.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:Ecommerce/model/models.dart';
+import 'package:restaurant_app/model/models.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../widgets/widgets.dart';
 
@@ -25,7 +25,7 @@ class ProductScreen extends StatelessWidget {
       appBar: CustomAppBar(title: product.name),
       bottomNavigationBar: BottomAppBar(
           color: Colors.black,
-          child: Container(
+          child: SizedBox(
             height: 60,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -59,7 +59,8 @@ class ProductScreen extends StatelessWidget {
                   builder: (context, state) {
                     return ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: const Color.fromARGB(255, 229, 220, 220)),
+                            backgroundColor:
+                                const Color.fromARGB(255, 229, 220, 220)),
                         onPressed: () {
                           context.read<CartBloc>().add(CartAddProduct(product));
                           Navigator.pushNamed(context, '/cart');
@@ -87,7 +88,7 @@ class ProductScreen extends StatelessWidget {
               autoPlay: true,
             ),
             items: [
-              CardCarusel(
+              CardCarousel(
                 product: product,
               )
             ]),

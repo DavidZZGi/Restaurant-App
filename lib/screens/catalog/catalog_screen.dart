@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Ecommerce/model/models.dart';
+import 'package:restaurant_app/model/models.dart';
 import '../../widgets/widgets.dart';
 
 class CatalogScreen extends StatelessWidget {

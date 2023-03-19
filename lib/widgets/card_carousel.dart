@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../model/models.dart';
 
-class CardCarusel extends StatelessWidget {
+class CardCarousel extends StatelessWidget {
   final Category? category;
   final Product? product;
-  const CardCarusel({
+  const CardCarousel({
     this.category,
     this.product,
     Key? key,

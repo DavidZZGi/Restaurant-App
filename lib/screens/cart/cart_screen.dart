@@ -1,6 +1,4 @@
-import 'package:Ecommerce/blocs/cart_bloc/bloc/cart_bloc.dart';
-import 'package:Ecommerce/model/cart_model.dart';
-import 'package:Ecommerce/model/models.dart';
+import 'package:restaurant_app/blocs/cart_bloc/bloc/cart_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,14 +21,15 @@ class CartScreen extends StatelessWidget {
         appBar: const CustomAppBar(title: 'Cart'),
         bottomNavigationBar: BottomAppBar(
             color: Colors.black,
-            child: Container(
+            child: SizedBox(
               height: 60,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 235, 227, 227)),
+                          backgroundColor:
+                              const Color.fromARGB(255, 235, 227, 227)),
                       onPressed: () {},
                       child: const Text(
                         'Go To Checkout',
@@ -69,7 +68,7 @@ class CartScreen extends StatelessWidget {
                             ),
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                    primary: Colors.black),
+                                    backgroundColor: Colors.black),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/');
                                 },

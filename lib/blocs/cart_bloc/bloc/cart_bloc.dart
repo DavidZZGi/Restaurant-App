@@ -1,4 +1,4 @@
-import 'package:Ecommerce/model/cart_model.dart';
+import 'package:restaurant_app/model/cart_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 

@@ -1,10 +1,9 @@
 // ignore_for_file: unnecessary_const
 
-import 'package:Ecommerce/blocs/wishlist_bloc/wishlist_bloc_bloc.dart';
+import 'package:restaurant_app/blocs/wishlist_bloc/wishlist_bloc_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../model/models.dart';
 import '../../widgets/widgets.dart';
 
 class WishlistScreen extends StatelessWidget {
@@ -21,8 +20,8 @@ class WishlistScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'Wishlist'),
-      bottomNavigationBar: BottomNavBar(),
+      appBar: const CustomAppBar(title: 'Wishlist'),
+      bottomNavigationBar: const BottomNavBar(),
       body: BlocBuilder<WishlistBlocBloc, WishlistBlocState>(
         builder: (context, state) {
           if (state is WishlistBlocLoading) {

@@ -1,15 +1,15 @@
-import 'package:Ecommerce/blocs/cart_bloc/bloc/cart_bloc.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:restaurant_app/blocs/cart_bloc/bloc/cart_bloc.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:Ecommerce/config/app_router.dart';
+import 'package:restaurant_app/config/app_router.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'Simple_Bloc_Observer.dart';
+import 'simple_bloc_observer.dart';
 import 'blocs/wishlist_bloc/wishlist_bloc_bloc.dart';
 import 'screens/screens.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   Bloc.observer = SimpleBlocObserver();
   runApp(const MyApp());
 }

@@ -1,4 +1,4 @@
-import 'package:Ecommerce/model/models.dart';
+import 'package:restaurant_app/model/models.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 part 'wishlist_bloc_event.dart';

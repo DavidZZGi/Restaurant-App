@@ -1,7 +1,7 @@
 // ignore: file_names
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:Ecommerce/model/models.dart';
+import 'package:restaurant_app/model/models.dart';
 
 import '../../widgets/widgets.dart';
 
@@ -26,20 +26,18 @@ class HomeAppScreen extends StatelessWidget {
       // ignore: avoid_unnecessary_containers
       body: Column(
         children: [
-          Container(
-            child: CarouselSlider(
-              options: CarouselOptions(
-                aspectRatio: 1.5,
-                viewportFraction: 0.9,
-                enlargeCenterPage: true,
-                enlargeStrategy: CenterPageEnlargeStrategy.height,
-                enableInfiniteScroll: true,
-                autoPlay: true,
-              ),
-              items: Category.listCategories
-                  .map((e) => CardCarusel(category: e))
-                  .toList(),
+          CarouselSlider(
+            options: CarouselOptions(
+              aspectRatio: 1.5,
+              viewportFraction: 0.9,
+              enlargeCenterPage: true,
+              enlargeStrategy: CenterPageEnlargeStrategy.height,
+              enableInfiniteScroll: true,
+              autoPlay: true,
             ),
+            items: Category.listCategories
+                .map((e) => CardCarousel(category: e))
+                .toList(),
           ),
           const SectionTitle(
             title: 'Popular',
